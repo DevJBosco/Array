@@ -1,17 +1,26 @@
 D = [0,0,0,0,0,0,0,0,0,0]
-
+impares= []
+pares = []
+positivos = []
+negativos = []
+zero = []
 for y in range (10):
      D[y]=int(input("digite um número: "))
 
 for z in range(10):
     if D[z]%2!=0:
-        print(f"Este é impar: {D[z]}")
+        impares.append(z)
     else:
-        print(f"Este é par: {D[z]}")
+        pares.append(z)
 
     if D[z]>0:
-        print(f"Este é positivo: {D[z]}")
+        positivos.append(z)
     elif D[z]<0:
-        priont(f"Este é negativo: {D[z]}")
+        negativos.append(z)
     else:
-        print(f"Zero {D[z]}")
+        zero.append(z)
+print(f"Deste números os pares são: {pares}")
+print(f"Destes números os impares são {impares}")
+print(f"Destes números {positivos} são positivos")
+print(f"Destes números  {negativos} são negativos")
+print(f"Destes números foram encontrados {zero} zero(s)")
