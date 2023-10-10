@@ -1,13 +1,11 @@
-
-a=[]
-contador=0
-num = 0
-while contador <= 8:
-     if num %2 == 0:
-          num += 1
-          a.append(num)
-     else:
-          num += 2
-          a.append(num)
-          contador += 1
-print(a)
+cont = 0
+impar = 0
+c=[0,0,0,0,0,0,0,0,0,0]
+while True:
+    if cont%2!=0:
+        c[impar]=cont
+        impar+=1
+    cont+=1
+    if impar>=10:
+        break
+print(c)
